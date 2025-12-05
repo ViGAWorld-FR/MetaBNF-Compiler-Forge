@@ -20,7 +20,7 @@ I wrote this program in 1991. It uses the C language syntax as it was at that ti
 
 
 ### 🔧 Usage under Linux in a terminal
-'''sh
+```sh
 make
 # ==> generates the executable: bnf
 
@@ -53,7 +53,7 @@ Chaque nouveau terminal externe doit être associé à une fonction de même nom
 J’ai écrit ce programme en 1991. Il utilise la syntaxe du langage C telle qu’elle était en vigueur à l’époque. La version originale de 1991 était compilée avec llc, et les fichiers étaient nommés en lettres majuscules sous MS‑DOS.
 
 ### 🔧 Utilisation sous Linux dans un terminal
-'''sh
+```sh
 make
 # ==> génère l'exécutable : bnf
 
