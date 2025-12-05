@@ -38,6 +38,7 @@ gcc -std=gnu90 test.c
 
 bnf<gramtest>test.c
 gcc -std=gnu90 test.c disbonjour.c
+```
 
 ---
 
@@ -71,4 +72,4 @@ gcc -std=gnu90 test.c
 
 bnf < gramtest > test.c
 gcc -std=gnu90 test.c disbonjour.c
-
+```
