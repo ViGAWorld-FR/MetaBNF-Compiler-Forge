@@ -21,12 +21,20 @@ I wrote this program in 1991. It uses the C language syntax as it was at that ti
 
 ### 🔧 Usage under Linux in a terminal
 make
-==> generates the executable: bnf
+# ==> generates the executable: bnf
+
 bnf<grammaire>test.c
-==> parses the grammar and generates the source code test.c, which is equivalent to the previously compiled bnf.c source code and can be directly compiled using the command:
+# ==> analyzes the grammar and generates the source code test.c
+#     which is equivalent to the previously compiled bnf.c
+#     and directly compilable with the command:
+
 gcc -std=gnu90 test.c
 
-Then, to build a new automaton, simply add a terminal element named <disbonjour> to the grammar so that the C function disbonjour() is automatically called. The new grammar, called gramtest, will be compiled as follows:
+# Then, to build a new automaton, simply add
+# a terminal element named <disbonjour> in the grammar
+# so that the C function disbonjour() is automatically called.
+# The new grammar, called gramtest, will be compiled as follows:
+
 bnf<gramtest>test.c
 gcc -std=gnu90 test.c disbonjour.c
 
@@ -45,12 +53,20 @@ J’ai écrit ce programme en 1991. Il utilise la syntaxe du langage C telle qu�
 
 ### 🔧 Utilisation sous Linux dans un terminal
 make
-==> génère l'exécutable : bnf
-bnf<grammaire>test.c
-==> analyse la grammaire et génère le code source test.c qui est équivalent au source bnf.c précédement compilé et directement compilable par la commande:
+# ==> génère l'exécutable : bnf
+
+bnf < grammaire > test.c
+# ==> analyse la grammaire et génère le code source test.c
+#     équivalent au fichier bnf.c précédemment compilé
+#     et directement compilable par la commande :
+
 gcc -std=gnu90 test.c
 
-Ensuite, pour construire un nouvel automate, il suffit d'ajouter un élément terminal nomé <disbonjour> dans la grammaire pour que la fonction C disbonjour() soit automatiquement appelée, la nouvelle grammaire appelée gramtest va être compilée ainsi:
-bnf<gramtest>test.c
+# Ensuite, pour construire un nouvel automate, il suffit d'ajouter
+# un élément terminal nommé <disbonjour> dans la grammaire
+# pour que la fonction C disbonjour() soit automatiquement appelée.
+# La nouvelle grammaire appelée gramtest va être compilée ainsi :
+
+bnf < gramtest > test.c
 gcc -std=gnu90 test.c disbonjour.c
 
