@@ -1,0 +1,25 @@
+Start::=<ligne_start><suite_de_lignes>
+    ligne_start::=<nom_test_start*><description>
+    nom_test_start::=<nom_test>
+        *description*::=::=<partie_droite>
+            partie_droite::=<repetition>|<tests><partie_droite_rep><'\n'>
+            partie_droite_rep::=[<'|'><tests>]*
+                *tests*::=<test><tests_rep>
+                tests_rep::=[<test>]*
+                    test::=<'<'><meta_caractere_ou_nom_test><'>'>|<repetition>|<caractere_non_signfctf><test_rep>
+                    test_rep::=[<caractere_non_signfctf>]*
+                        meta_caractere_ou_nom_test::='<caractere>'|<nom_test>
+                            *nom_test*::=<caractere_de_nom><nom_test_rep>
+                            nom_test_rep::=[<caractere_de_nom>]*
+                                caractere_de_nom::=<majuscule>|<minuscule>|<numerique>|_|*
+                        repetition::=<'['><*repetition_corps*><']'>*
+                        repetition_corps::=<tests>
+    suite_de_lignes::=<ligne><suite_de_lignes_rep>
+    suite_de_lignes_rep::=[<ligne>]*
+        ligne::=<'\n'>|<nom_test><description>
+
+caractere::=<C_caractere>
+majuscule::=A_Z
+minuscule::=a_z
+numerique::=0_9
+

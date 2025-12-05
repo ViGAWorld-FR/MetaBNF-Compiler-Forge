@@ -1,0 +1,3 @@
+bnf : bnf.c head.h queue.h users.h
+	cc -g bnf.c -o bnf
+
