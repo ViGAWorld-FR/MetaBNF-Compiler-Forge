@@ -1,10 +1,9 @@
 # MetaBNF-Compiler-Forge
 EN:
-*A eBNF grammar that forges its own compiler — maybe the world’s smallest yet most powerful.*
+*eBNF (Backus-Naur Form) grammar and its compiler in C language, to produce in a few lines compilers of automata of syntactic analyzers, directly from the BNF grammar — undoubtedly the smallest and most powerful compiler forge in the world.*  
 
 FR:
-La plus petite et la plus puissante forge de compilateurs au monde.
-*Une eBNF grammaire qui forge son propre compilateur — sans doute la plus petite et la plus puissante au monde.*  
+*Grammaire eBNF (Backus-Naur Form) et son compilateur en langage C, pour produire en quelques lignes des compilateurs des automates des analyseurs syntaxiques, directement à partir de la grammaire BNF — sans doute la plus petite et la plus puissante forge de compilateurs au monde.*  
 
 EN:
 ## Overview
